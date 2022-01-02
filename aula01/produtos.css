@@ -1,0 +1,22 @@
+body {
+    
+}
+
+header {
+    background: #BBBBBB;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    position: absolute;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold; /* Isso é pra deixar a fonte mais pesada, bold. Não é o negrito normal. */
+    font-size: 22px;
+    text-decoration: none;/* Isso é para decorar o texto, sublinhas, riscar, etc. */
+
+}
