@@ -1,15 +1,23 @@
-body {
-    
-}
-
 header {
     background: #BBBBBB;
+    padding: 20px;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto 0 auto;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
 nav li {
     display: inline;
     margin: 0 0 0 15px;
-    position: absolute;
+    
 }
 
 nav a {
@@ -19,4 +27,31 @@ nav a {
     font-size: 22px;
     text-decoration: none;/* Isso é para decorar o texto, sublinhas, riscar, etc. */
 
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    vertical-align: top;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
 }
