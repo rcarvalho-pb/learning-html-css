@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="caixa">
+                <h1>
+                    <img src="logo.png" alt="logo da barbearia alura">
+                </h1>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="produtos.html">Produtos</a>
+                            </li>
+                            <li>
+                                <a href="contatos.html">Contatos</a>
+                            </li>
+                        </ul>
+                    </nav>                
+            </div>
+        </header>
+
+        <main>
+            <form>
+                <!--Para os inputs, é sempre bom que utilizemos os imputs correntos cara data aplicação, principalmente quando acessamos a página na web.
+                Para saber os tipos certos de input, olhamos no site www.mobileinputstypes.com-->
+                <!-- Sempre que tivermos um input, nomeamos ele com a tag label!! -->
+                <label for="nomesobrenome">
+                    Nome e Sobrenome
+                </label>
+                <!-- Input para entrada de informações, no caso, tipo de entrada é texto.-->
+                <input class="input-padrao" type="text" id="nomesobrenome">
+
+                <label for="email">Email</label>
+                <input class="input-padrao" type="email" id="email">
+
+                <label for=telefone>Telefone</label>
+                <input class="input-padrao" type="tel" id="telefone">
+
+                <!--Para os campos de comentários, que necessitam de mais de uma linha, nós vamos usar o "textarea" que serve pra colocar mais conteudo e de forma mais complexa. O textarea é uma tag de conteudo, ou seja, abre e fecha.-->
+                <label for="mensagem">Mensagem</label>
+                <textarea cols=68 rows=10 id="mensagem"></textarea>
+
+                <!--Em forms, quando queremos agrupar elementos, não utilizamos a div, utilizamos o fieldset
+                Também podemos utilizar o fieldest para agrupar informações como as infos de um cartão.-->
+                <fieldset>
+                    <!--Para entradas de multiplas escolhas ou seleção de opções, usamos o tipo de input "radio"-->
+                    <!--Para que só possamos escolher uma das opções, temos que colocar o campo "name" em todas as opções para ele entender como se todos fizessem parte de uma única seleção-->
+                    <!--Para os textos ou títulos, utilizamos a tag legend.-->
+                    <Legend>Como prefere o nosso contato:</legend>
+                    <label for="radio-email">
+                        <input type="radio" name="contato" value="email" id="radio-email">
+                        Email
+                    </label>                   
+
+                    <label for="radio-telefone">
+                        <input type="radio" name="contato" value="telefone" id="radio-telefone">
+                        Telefone
+                    </label>
+
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                        Whatsapp
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual o horário prefere ser atendido?</legend>
+                    <!--Para criar um seletor com varias opções para escolher, como uma barra flutuante no excel, usamos o "select"-->
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+                
+                <label><input class="checkbox" type="checkbox">Gostaria de receber nossas novidades por email?</label>
+
+                <!--Esse input cria um botão de enviar, por padrão, ele fica na lingua da página, mas caso queiramos colocar um valor fixo, atribuimos o value="algo" dentro da tag.-->
+                <input type="submit" value="Enviar form">
+
+
+                
+            </form>
+        </main>
+
+        <footer>
+            <img src="logo-branco.png" alt="Logo da barbearia alura">
+            <p class="copyright">
+                &copy; Copyright Barbearia Alura - 2019
+            </p>
+        </footer>
+    </body>
+</html>
+
+</html>

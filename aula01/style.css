@@ -1,51 +1,137 @@
-body{   
-}
-
-#banner{
-    width: 100%;
-}
-
-.principal{
-    background: #CCCCCC;
-    padding: 30px;
-}
-
-h1{
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-#missao{
-    font-size: 20px;
-}
-
-em strong{
-    color: #FF0000;
-}
-
-.itens{
-    font-style: italic;
-}
-
-.beneficios{
-    background: #FFFFFF;
+header {
+    background: #BBBBBB;
     padding: 20px;
 }
 
-h2 {
-    text-align: center;
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto 0 auto;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-ul {
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+    
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold; /* Isso é pra deixar a fonte mais pesada, bold. Não é o negrito normal. */
+    font-size: 22px;
+    text-decoration: none;/* Isso é para decorar o texto, sublinhas, riscar, etc. */
+
+}
+
+/* Para mapear quando o mouse está em cima de um elemento, utilizamos o "hover" */
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
     display: inline-block;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; /* Deixa a porcentagem do tamanho do elemento (width) como "absoluto" e o padding fica dentro desse tamanho, ao inves de adicionar mais espaço. */
+    border: 2px solid #000000;
+    /*
+    Essa forma de ajustar a borda, é a forma unificada.
+    Também poderíamos ajustar a borda de forma separada:
+    border-color: #000000;
+    border-style: solid;
+    border-width: 2px;
+    */
+    border-radius: 10px; /* Serve para arredondar os cantos da borda */
 }
 
-.imagembeneficios{
-    width: 50%;
+.produtos li:hover {
+    border-color: #C78C19;
+
+}
+
+/*Quando clicamos em um elemento na tela, mapeamos com o :active */
+
+.produtos li:active {
+    border-color: green;
+}
+
+/* Para mudar os elementos dentro de divisões como h1, h2, p, etc, temos que especificar que queremos mudar eles da seguinte forma: */
+
+.produtos li:hover h2 {
+    /*Aqui estamos dizendo: Em produtos, na lista, quando o mouse estiver por cima, h2 vai se comportar de tal formar. */
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+/*
+    Para a gnt usar as configurações de uma sessão em outra, podemos colocar uma vírgula entre os nomes e usar as mesmas coisas, como mostrado abaixo:
+*/
+
+.input-padrao {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;    
+}
+
+.checkbox {
+    margin:20px 0;
 }
