@@ -38,17 +38,17 @@
                     Nome e Sobrenome
                 </label>
                 <!-- Input para entrada de informações, no caso, tipo de entrada é texto.-->
-                <input class="input-padrao" type="text" id="nomesobrenome">
+                <input class="input-padrao" type="text" id="nomesobrenome" required>
 
                 <label for="email">Email</label>
-                <input class="input-padrao" type="email" id="email">
+                <input class="input-padrao" type="email" id="email" required placeholder="SeuEmail@dominio.com">
 
                 <label for=telefone>Telefone</label>
-                <input class="input-padrao" type="tel" id="telefone">
+                <input class="input-padrao" type="tel" id="telefone" required placeholder="(XX) 12345-1234">
 
                 <!--Para os campos de comentários, que necessitam de mais de uma linha, nós vamos usar o "textarea" que serve pra colocar mais conteudo e de forma mais complexa. O textarea é uma tag de conteudo, ou seja, abre e fecha.-->
                 <label for="mensagem">Mensagem</label>
-                <textarea cols=68 rows=10 id="mensagem"></textarea>
+                <textarea cols=68 rows=10 id="mensagem" required></textarea>
 
                 <!--Em forms, quando queremos agrupar elementos, não utilizamos a div, utilizamos o fieldset
                 Também podemos utilizar o fieldest para agrupar informações como as infos de um cartão.-->
@@ -68,7 +68,7 @@
                     </label>
 
                     <label for="radio-whatsapp">
-                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>
                         Whatsapp
                     </label>
                 </fieldset>
@@ -83,14 +83,37 @@
                     </select>
                 </fieldset>
                 
-                <label><input class="checkbox" type="checkbox">Gostaria de receber nossas novidades por email?</label>
+                <label><input class="checkbox" type="checkbox" checked>
+                    Gostaria de receber nossas novidades por email?
+                </label>
 
                 <!--Esse input cria um botão de enviar, por padrão, ele fica na lingua da página, mas caso queiramos colocar um valor fixo, atribuimos o value="algo" dentro da tag.-->
-                <input type="submit" value="Enviar form">
-
-
-                
+                <input class="enviar" type="submit" value="Enviar form">
+              
             </form>
+            <table class="horariofuncionamento">
+                <!--Em tabelas, para o cabeçalçho, utilizamos o thead e dentro da célula, ao invés de td utilizamos th-->
+                <thead> 
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>08:00h ~ 12:00h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>08:00h ~ 12:00h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>08:00h ~ 12:00h</td>
+                    </tr>
+                </tbody>
+            </table>
         </main>
 
         <footer>
